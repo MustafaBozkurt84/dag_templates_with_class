@@ -1,7 +1,7 @@
 import psycopg2
-from airflow.hooks.postgres_hook import PostgresHook
-from airflow.hooks.snowflake_hook import SnowflakeHook
+from airflow.providers.postgres.hooks.postgres import PostgresHook
 
+from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
 
 class SnowflakeSCD:
     def __init__(self, sf_conn_id, pg_conn_id, sf_database, sf_schema):

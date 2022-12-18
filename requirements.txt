@@ -1,0 +1,8 @@
+pytest
+pytest-mock
+apache-airflow
+apache-airflow[postgres]
+apache-airflow-providers-snowflake
+snowflake-connector-python
+
+
