@@ -3,7 +3,7 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
 import sys
-sys.path.append('/lib')
+sys.path.append('/home/runner/work/dag_templates_with_class/dag_templates_with_class//lib')
 from postgres_loader_from_snowflake import SnowflakeSCD
 from unittest.mock import patch
 '''This test class includes two test methods: `test_create_table` and `test_load_data`. 
