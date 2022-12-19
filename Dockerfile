@@ -11,6 +11,6 @@ WORKDIR /app
 COPY . .
 
 # Run the tests
-CMD ["pytest"]
+CMD ["pytest app/test/test_snowflake_scd.py"]
 
 #docker build -t test-image .

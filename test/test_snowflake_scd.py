@@ -1,8 +1,12 @@
 import pytest
 from unittest.mock import Mock
 import sys
-sys.path.append('/home/runner/work/dag_templates_with_class/dag_templates_with_class/lib')
-from postgres_loader_from_snowflake import SnowflakeSCD
+try:
+    sys.path.append('/home/runner/work/dag_templates_with_class/dag_templates_with_class/lib')
+    from postgres_loader_from_snowflake import SnowflakeSCD
+except:
+    sys.path.append('/app/lib')
+    from postgres_loader_from_snowflake import SnowflakeSCD
 from unittest.mock import patch
 # Create mock objects for the SnowflakeHook and PostgresHook classes
 sf_mock = Mock()
